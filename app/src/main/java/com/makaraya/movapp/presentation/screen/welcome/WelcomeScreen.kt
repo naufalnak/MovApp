@@ -1,4 +1,4 @@
-package com.makaraya.movapp.screen.welcome
+package com.makaraya.movapp.presentation.screen.welcome
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalAnimationApi

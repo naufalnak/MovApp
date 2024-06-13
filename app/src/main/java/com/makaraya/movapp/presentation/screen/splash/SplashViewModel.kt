@@ -1,4 +1,4 @@
-package com.makaraya.movapp.screen.splash
+package com.makaraya.movapp.presentation.screen.splash
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State

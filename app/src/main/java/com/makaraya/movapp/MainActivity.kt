@@ -16,7 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.pager.ExperimentalPagerApi
-import com.makaraya.movapp.screen.splash.SplashViewModel
+import com.makaraya.movapp.presentation.screen.splash.SplashViewModel
 import com.makaraya.movapp.ui.theme.MovAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject

@@ -1,6 +1,9 @@
 package com.makaraya.movapp.di
 
 import android.content.Context
+import com.google.firebase.auth.FirebaseAuth
+import com.makaraya.movapp.data.firebase.AuthRepository
+import com.makaraya.movapp.data.firebase.AuthRepositoryImpl
 import com.makaraya.movapp.data.local.DataStoreRepository
 import dagger.Module
 import dagger.Provides
@@ -19,5 +22,13 @@ object MainModule {
         @ApplicationContext context: Context
     ) = DataStoreRepository(context = context)
 
+    @Provides
+    @Singleton
+    fun provideFirebaseAuth() = FirebaseAuth.getInstance()
 
+    @Provides
+    @Singleton
+    fun provideAuthRepositoryImpl(firebaseAuth: FirebaseAuth): AuthRepository {
+        return AuthRepositoryImpl(firebaseAuth)
+    }
 }

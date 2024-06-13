@@ -11,8 +11,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.makaraya.movapp.navigation.Screen
-import com.makaraya.movapp.screen.home.HomeScreen
-import com.makaraya.movapp.screen.welcome.WelcomeScreen
+import com.makaraya.movapp.presentation.screen.home.HomeScreen
+import com.makaraya.movapp.presentation.screen.login.LoginScreen
+import com.makaraya.movapp.presentation.screen.welcome.WelcomeScreen
 
 @OptIn(ExperimentalAnimationApi::class, ExperimentalPagerApi::class)
 @ExperimentalMaterial3Api
@@ -37,6 +38,9 @@ fun MovApp(
             ) {
                 composable(route = Screen.Welcome.route) {
                     WelcomeScreen(navController = navController)
+                }
+                composable(route = Screen.Login.route) {
+                    LoginScreen(navController = navController)
                 }
                 composable(route = Screen.Home.route) {
                     HomeScreen(navController = navController)
