@@ -1,4 +1,4 @@
-package com.makaraya.movapp.screen.welcome
+package com.makaraya.movapp.presentation.screen.welcome
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

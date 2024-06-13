@@ -1,4 +1,4 @@
-package com.makaraya.movapp.screen.home
+package com.makaraya.movapp.presentation.screen.home
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
