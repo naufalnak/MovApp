@@ -42,6 +42,9 @@ fun MovApp(
                 composable(route = Screen.Login.route) {
                     LoginScreen(navController = navController)
                 }
+                composable(route = Screen.Register.route) {
+                    RegisterScreen(navController = navController)
+                }
                 composable(route = Screen.Home.route) {
                     HomeScreen(navController = navController)
                 }
