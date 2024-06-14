@@ -70,7 +70,7 @@ fun LoginScreen(
                         }
                         else -> {
                             viewModel.loginUser(email, password) {
-                                navController.navigate(Screen.Home.route) {
+                                navController.navigate(Screen.Movies.route) {
                                     popUpTo(Screen.Login.route) {
                                         inclusive = true
                                     }
@@ -83,7 +83,7 @@ fun LoginScreen(
                 }
             },
             moveToRegister = {
-                navController.navigate(Screen.Home.route)
+                navController.navigate(Screen.Register.route)
             },
             modifier = modifier
         )
