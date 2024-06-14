@@ -21,15 +21,12 @@ import com.makaraya.movapp.ui.theme.MovAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-@ExperimentalAnimationApi
-@ExperimentalPagerApi
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     @Inject
     lateinit var splashViewModel: SplashViewModel
 
-    @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen().setKeepOnScreenCondition {
@@ -37,11 +34,7 @@ class MainActivity : ComponentActivity() {
         }
 
         setContent {
-            MovAppTheme {
-                val screen by splashViewModel.startDestination
-                val navController = rememberNavController()
-                MovApp(navController = navController, startDestination = screen)
-            }
+            MovApp(splashViewModel = splashViewModel)
         }
     }
 }

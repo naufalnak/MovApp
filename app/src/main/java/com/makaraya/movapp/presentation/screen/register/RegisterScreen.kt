@@ -75,7 +75,7 @@ fun RegisterScreen(
                         ).show()
                     } else {
                         viewModel.registerUser(email, password) {
-                            navController.navigate(Screen.Home.route) {
+                            navController.navigate(Screen.Movies.route) {
                                 popUpTo(Screen.Register.route) { inclusive = true }
                             }
                             email = ""

@@ -80,6 +80,8 @@ dependencies {
     // Pager and Indicators - Accompanist
     implementation ("com.google.accompanist:accompanist-pager:0.34.0")
     implementation ("com.google.accompanist:accompanist-pager-indicators:0.34.0")
+    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.34.0")
+    implementation ("com.google.accompanist:accompanist-navigation-animation:0.34.0")
 
     // DataStore Preferences
     implementation("androidx.datastore:datastore-preferences:1.1.1")
@@ -89,8 +91,26 @@ dependencies {
     implementation ("androidx.compose.material3:material3:1.2.1")
     implementation ("androidx.compose.animation:animation:1.6.7")
     implementation ("androidx.compose.ui:ui-tooling:1.6.7")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.1")
     implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+
+    // Lifecycle
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.8.2")
+    implementation ("androidx.activity:activity-compose:1.9.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime-compose:2.8.2")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.1")
+
+    // Room
+    implementation ("androidx.room:room-runtime:2.6.1")
+    implementation ("androidx.room:room-ktx:2.6.1")
+    ksp ("androidx.room:room-compiler:2.6.1")
+
+    // Coil
+    implementation ("io.coil-kt:coil-compose:2.6.0")
+
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
 
     //Dagger-Hilt
     implementation ("com.google.dagger:hilt-android:2.49")
